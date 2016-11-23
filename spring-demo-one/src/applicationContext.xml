@@ -12,7 +12,7 @@
 
 
        <!-- Define dependency -->
-    <bean id="myFortune" class="com.d460.springdemo.HappyFortuneService">
+    <bean id="myFortune" class="com.d460.springdemo.RandomFortune">
     
     </bean>   
        
