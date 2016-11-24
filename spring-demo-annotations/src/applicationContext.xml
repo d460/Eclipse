@@ -8,29 +8,10 @@
       http://www.springframework.org/schema/context 
       http://www.springframework.org/schema/context/spring-context-4.2.xsd">
 
-		<context:property-placeholder location="classpath:sport.properties"/>
+<!-- Entry to enable component scanning -->
 
+<context:component-scan base-package="com.d460.springdemo"></context:component-scan>
 
-       <!-- Define dependency -->
-    <bean id="myFortune" class="com.d460.springdemo.RandomFortune">
-    
-    </bean>   
-       
-       
- 	<bean id="myCoach"  class="com.d460.springdemo.CricketCoach">
- 		
- 		<!--  <constructor-arg ref="myFortune"/> -->
- 		
- 	
- 		<property name="fortuneService" ref="myFortune">
- 		</property>
- 		<property name="emailAddress" value="${foo.email}">
- 		</property>
- 		<property name="team" value="${foo.team}">
- 		</property>
- 			
- 		</bean>
- 
 </beans>
 
 
