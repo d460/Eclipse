@@ -1,0 +1,3 @@
+Fortune one
+Fortune two
+Fortune three
